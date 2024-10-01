@@ -1,0 +1,30 @@
+<ROSETTASCRIPTS>
+  <SCOREFXNS>
+    <ScoreFunction name="sfxn" weights="ref2015" />
+  </SCOREFXNS>
+
+  <RESIDUE_SELECTORS>
+    <Chain name="chainA" chains="A" />
+  </RESIDUE_SELECTORS>
+
+  <SIMPLE_METRICS>
+    <RMSDMetric name="rmsd" custom_type="protein" residue_selector="chainA" />
+  </SIMPLE_METRICS>
+
+  <TASKOPERATIONS>
+    <RestrictToRepacking name="repack_only" />
+  </TASKOPERATIONS>
+
+  <FILTERS>
+    <MetricFilter name="rmsd_filter" metric="rmsd" cutoff="10.0" comparison_type="lt" />
+  </FILTERS>
+
+  <MOVERS>
+    <FastRelax name="fastrelax" scorefxn="sfxn" repeats="5" task_operations="repack_only" />
+  </MOVERS>
+
+  <PROTOCOLS>
+    <Add mover="fastrelax" />
+    <Add filter="rmsd_filter" />
+  </PROTOCOLS>
+</ROSETTASCRIPTS>
