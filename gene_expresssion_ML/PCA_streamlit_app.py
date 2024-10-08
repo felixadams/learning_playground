@@ -1,7 +1,11 @@
+# web app that takes gene expression data and returns a PCA plot. 
+
+
 import pandas as pd
 from sklearn.decomposition import PCA
 import streamlit as st
 import matplotlib.pyplot as plt
+
 
 # Function to load and preprocess the dataset
 def load_data(file_path):
