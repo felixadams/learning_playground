@@ -1,5 +1,5 @@
 # Cancer Dataset Classification Web App
-This web app provides an interface for analyzing and classifying cancer gene expression data using various machine learning (ML) models. The app is designed to help users compare model performance across different cancer types, identify influential genes, and perform feature selection to enhance classification accuracy. The focus is on both binary classification (cancer vs. non-cancer) and multiclass classification (different cancer subtypes).
+This web app (model_comp_ge.py) provides an interface for analyzing and classifying cancer gene expression data using various machine learning (ML) models. The app is designed to help users compare model performance across different cancer types, identify influential genes, and perform feature selection to enhance classification accuracy. The focus is on both binary classification (cancer vs. non-cancer) and multiclass classification (different cancer subtypes).
 ## Features
 
 ### Data availability:
