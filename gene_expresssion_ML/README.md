@@ -3,7 +3,7 @@ This web app provides an interface for analyzing and classifying cancer gene exp
 ## Features
 
 ### Data availability:
-The data we use comes form teh following link: https://sbcb.inf.ufrgs.br/cumida
+The data we use comes from the following link: https://sbcb.inf.ufrgs.br/cumida
 
 ### File Upload: 
 Upload a CSV dataset for model training and testing.
